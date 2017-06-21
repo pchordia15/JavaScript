@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<p id="Strings"></p>
+
+	<script>
+	var rndStr = "A long " + "string that goes " + "on and on";
+
+	document.write("String Length = ", rndStr.length, "<br/>");
+	document.write("Index for \"goes\" is = ", rndStr.indexOf("goes"), "<br/>");
+	document.write(rndStr.slice(19,23), "<br/>");
+	document.write(rndStr.slice(19), "<br/>");
+	document.write(rndStr.substr(19,4), "<br/>");
+
+	document.write(rndStr.replace("and on", "forever"), "<br/>");
+	document.write("Character at index 14 = ", rndStr.charAt(14), "<br/>");
+
+	var rndArray = rndStr.split(" ");
+	document.write(rndArray, "<br/>");
+
+	document.write(rndStr.toUpperCase(), "<br/>");
+	document.write(rndStr.toLowerCase(), "<br/>");
+	</script>
+</body>
+
+</html>
