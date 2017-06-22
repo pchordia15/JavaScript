@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+	<p id = "arrays"></p>
+
+	<script>
+
+	var person = ["Priyanka", "India", "23"];
+
+	document.write("Value at Index 1 is: ", person[0], "<br/>");
+
+	person[3] = "pc@gmail.com";
+
+	person.splice(1,1, "USA", "CA");
+	document.write("Array: ", person.valueOf(), "<br/>");
+	document.write("Array: ", person.join(", "), "<br/>");
+
+	delete person[3];
+	person.sort();
+
+	var numbers = [4, 2, 9, 3, 1, 5];
+
+	numbers.sort(function(x,y){return x - y});
+	document.write("Sorted Numbers Ascending: ", numbers.toString(), "<br/>");
+	numbers.sort(function(x,y){return y - x});
+	document.write("Sorted Numbers Descending: ", numbers.toString(), "<br/>");
+
+	var combinedArray =numbers.concat(person);
+	person.pop();
+	person.push("555-5555", "US");
+	person.shift();
+	person.unshift("Priyanka");
+
+	for(i = 0; i<person.length; i++)
+	{
+		document.write(person[i], "<br/>");
+	}
+
+	</script>
+
+</body>
+</html>
