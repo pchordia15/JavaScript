@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+	<p id = "event"></p>
+
+	<script>
+
+	function openAlert(mess)
+	{
+		alert(mess);
+	}
+	</script>
+
+	<a href = "JavaScript:void(0)" onClick="alert('Hello');">Say Hello</a><br/>
+	<a href = "JavaScript:void(0)" onClick="openAlert('Hi There');">Say Something</a><br/>
+
+	<a href = "JavaScript:void(0)" 
+	onmouseover="this.style.color = 'red';"
+	onmouseout="this.style.color = 'blue';"
+	ondblclick="this.text='You double clicked me';"
+	onmousedown="this.text='Don\'t Press too hard';"
+	onmouseup="this.text='Thank you';">Make me Red</a><br/>
+
+	<input type="text" id="randInput" 
+	onChange = "var dataEntered = document.getElementById('randInput').value;
+	alert('User Typed ' + dataEntered);"><br/>
+	
+</body>
+</html>
